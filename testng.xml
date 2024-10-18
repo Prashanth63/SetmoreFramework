@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="2">
+    <test name="Pixel_7a">
+        <parameter name="deviceName" value="Pixel_7a"/>
+        <parameter name="platformVersion" value="14.0"/>
+           <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="8200"/>
+         <parameter name="appiumPort" value="4723"/>
+         <parameter name="username" value="setmore24@mailinator.com"/>
+         <parameter name="password" value="setmore24"/>
+         <classes>
+             <class name="qa.mobile.Login"/>
+         </classes>
+     </test>
+
+     <test name="Pixel_8">
+         <parameter name="deviceName" value="Pixel_8"/>
+         <parameter name="platformVersion" value="15.0"/>
+         <parameter name="udid" value="emulator-5554"/>
+         <parameter name="systemPort" value="8201"/>
+        <parameter name="appiumPort" value="4725"/>
+        <parameter name="username" value="setmore24@mailinator.com"/>
+        <parameter name="password" value="setmore24"/>
+        <classes>
+            <class name="qa.mobile.Login"/>
+        </classes>
+    </test>
+</suite>
